@@ -530,3 +530,16 @@ ul{
   color: white;
   font-weight: bold;
 }
+
+#Join{
+  text-decoration: none;
+  color:white;
+  background-color: #1976D2;
+  padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+  border-radius: 20px;
+  background: linear-gradient(to right, #365ca3, #032a6e);
+}
+
+a {
+  text-decoration: none;
+}
