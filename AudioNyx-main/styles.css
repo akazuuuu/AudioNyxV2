@@ -1,9 +1,13 @@
-*{
-    padding: 0px;
-    margin: 0px;
-
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Montserrat', serif;
       background-color: #0f0f0f;
@@ -157,6 +161,7 @@ hr {
   cursor: pointer;
   font-family: "Orbitron", sans-serif;
   font-weight: bold;
+ 
 }
 
 .HeroButton:hover{
@@ -288,8 +293,14 @@ hr {
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 
+}
+
+
+
+.collections p{
+  margin-bottom: 0.0001rem;
 }
 
 .collections:hover{
@@ -308,4 +319,65 @@ hr {
   padding-top: 5rem;
   margin: 0 auto;
   filter: drop-shadow(0px 37px 29px #000000);
+}
+
+.Eclipse{
+  max-width: 900px;
+  width: 100%;
+}
+#EclipseHero{
+  text-align: center;
+   font-size: 3rem;
+  font-family: 'Orbitron', sans-serif;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.EclipseContainer{
+text-align: center;
+padding-top: 2rem;
+display: flex;
+justify-content: center;
+}
+
+.EclipsePics{
+ display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-items: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.EclipsePics a img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.EclipsePics a:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(66, 165, 245, 0.4);
+}
+
+.CollectionButton {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #1E90FF;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.CollectionButton:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(30, 144, 255, 0.4);
 }
