@@ -414,3 +414,119 @@ justify-content: center;
 .hover-wrapper:hover .hover-text {
   opacity: 1;
 }
+
+/*MODALS FOR ECLIPSE*/
+/*MODALS FOR ECLIPSE COLLECTION*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  background-color: #1a1a1a;
+  margin: 5% auto;
+  padding: 2em;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 900px;
+  color: white;
+}
+
+.modal-body {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#eclipse1 {
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.modal-text {
+  max-width: 400px;
+}
+
+.modal-text ul {
+  padding-left: 1.2em;
+  margin-top: 1em;
+}
+
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#eclipse2{
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+#eclipse3{
+    width: 300px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+#eclipse4{
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+
+}
+
+#nova1,
+#nova2,
+#nova3,
+#nova4{
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+
+
+#pulse1,
+#pulse2,
+#pulse3,
+#pulse4{
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.specs {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.price_tag {
+  margin-top: 1em;
+  font-size: 3em;
+  color: white;
+  font-weight: bold;
+}
