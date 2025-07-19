@@ -28,3 +28,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+  const video = document.getElementById('scrollVideo');
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const maxScroll = document.body.scrollHeight - window.innerHeight;
+    const scrollFraction = scrollTop / maxScroll;
+
+    const duration = video.duration || 1; // Prevent NaN before video loads
+    video.currentTime = scrollFraction * duration;
+  });
+
+  // Wait for metadata to ensure duration is known
+  video.addEventListener('loadedmetadata', () => {
+    video.pause(); // Pause to prevent autoplay
+  });
